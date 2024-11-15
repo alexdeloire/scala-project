@@ -10,3 +10,4 @@ lazy val root = (project in file("."))
 
 libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.5.3"
 libraryDependencies += "org.neo4j" %% "neo4j-connector-apache-spark" % "5.3.1_for_spark_3"
+libraryDependencies += "org.mongodb.scala" %% "mongo-scala-driver" % "5.2.0"

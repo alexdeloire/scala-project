@@ -2,5 +2,6 @@
 .idea
 target
 project
-data
+data/nvd*.json
+data/stackoverflow.csv
 output
