@@ -16,7 +16,7 @@ import scala.util.{Try, Using}
 
 object CVEJsonMongoDB {
     def main(args: Array[String]): Unit = {
-        val connectionString = "placeholder";
+        val connectionString = "mongodb+srv://user0:@cluster0.nrkl0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
         // Construct a ServerApi instance using the ServerApi.builder() method
         val serverApi = ServerApi.builder.version(ServerApiVersion.V1).build()
         val settings = MongoClientSettings
@@ -43,7 +43,7 @@ object CVEJsonMongoDB {
             println("Pinged your deployment. Successfully connected to MongoDB!")
 
             val dataFolder = "data" // Path to the folder with JSON files
-            val files = new java.io.File(dataFolder).listFiles.filter(_.getName.endsWith("2003.json"))
+            val files = new java.io.File(dataFolder).listFiles.filter(_.getName.endsWith(".json"))
 
             files.foreach { file =>
                 val year = file.getName.stripSuffix(".json") // Extract year from the filename

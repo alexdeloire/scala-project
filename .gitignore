@@ -4,4 +4,6 @@ target
 project
 data/nvd*.json
 data/stackoverflow.csv
+data/extractedcve-2024-min.json
+data/extractedcve-2024.json
 output
